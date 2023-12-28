@@ -66,7 +66,7 @@ public class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expectedMonthCount = 5;
-        int belowAvgCount = service.BelowAvgCount(sales);
+        int belowAvgCount = service.belowAvgCount(sales);
 
         System.out.println("Количество месяцев с продажами ниже среднего: " + belowAvgCount);
 
@@ -80,7 +80,7 @@ public class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expectedMonthCount = 5;
-        int aboveAvgCount = service.AboveAvgCount(sales);
+        int aboveAvgCount = service.aboveAvgCount(sales);
 
         System.out.println("Количество месяцев с продажами выше среднего: " + aboveAvgCount);
 

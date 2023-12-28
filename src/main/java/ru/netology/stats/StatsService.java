@@ -38,7 +38,7 @@ public class StatsService {
         return maxMonth + 1; // месяца нумеруются с 1, а индексы массива с 0, нужно сдвинуть ответ на 1
     }
 
-    public int BelowAvgCount(long[] sales) {
+    public int belowAvgCount(long[] sales) {
         int averageSales = avgSales(sales);
         int belowAvgCount = 0;
         for (long sale : sales) {
@@ -49,11 +49,11 @@ public class StatsService {
         return belowAvgCount;
     }
 
-    public int AboveAvgCount(long[] sales) {
+    public int aboveAvgCount(long[] sales) {
         int averageSales = avgSales(sales);
         int aboveAvgCount = 0;
         for (long sale : sales) {
-            if (sale < averageSales) {
+            if (sale > averageSales) {
                 aboveAvgCount++;
             }
         }
